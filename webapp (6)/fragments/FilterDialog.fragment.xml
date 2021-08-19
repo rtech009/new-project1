@@ -1,0 +1,29 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<ViewSettingsDialog
+		confirm="handleFilterDialogConfirm">
+		<filterItems>
+			<ViewSettingsFilterItem
+				text="EmployeeId"
+				key="id2"
+				multiSelect="false">
+				<items>
+					<ViewSettingsItem text="Less than 3" key="item1" />
+					<ViewSettingsItem text="Between 3 and 6" key="item2" />
+					<ViewSettingsItem text="More Than 6" key="item3" />
+				</items>
+			</ViewSettingsFilterItem>
+			<ViewSettingsFilterItem
+				text="Hiredate"
+				key="dat"
+				multiSelect="false">
+				<items>
+					<ViewSettingsItem text=" In 1992" key="dat1" />
+					<ViewSettingsItem text="Between 1992 and 1993" key="dat2" />
+					<ViewSettingsItem text="After 1993" key="dat3" />
+				</items>
+			</ViewSettingsFilterItem>
+		</filterItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>
